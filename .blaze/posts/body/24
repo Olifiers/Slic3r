@@ -1,0 +1,33 @@
+
+<p><small>This release, and especially the work about support for multiple extruders, was sponsored by <a href="http://www.lulzbot.com/"><b>LulzBot</b></a>. Check out their products!</small></p>
+
+<h4>New features:</h4>
+<ul>
+    <li>print <b>multi-material files</b>!</li>
+    <li><b>save and load plates</b></li>
+    <li>new option to force a solid layer after a given number of layers</li>
+    <li>convert multiple STL files into a single multi-material AMF file</li>
+</ul>
+
+<h4>Improvements:</h4>
+<ul>
+    <li><i>less memory usage</i> when the graphical interface is used</li>
+    <li>rotation and scaling in the plater is a lot faster</li>
+    <li>better randomization for layer starting points</li>
+    <li>better adhesion of brim and support material</li>
+    <li>parts positions are preserved when an object is split in the plater</li>
+    <li>new <i>[print_preset]</i>, <i>[filament_preset]</i> and <i>[printer_preset]</i> placeholders for file names</li>
+</ul>
+
+<h4>Changes:</h4>
+<ul>
+    <li>use support material extruder for brim</li>
+</ul>
+
+<h4>Bugfixes:</h4>
+<ul>
+    <li><i>only retract when crossing perimeters</i> was still retracting too much</li>
+    <li>the <i>--datadir</i> command line option was ignored</li>
+    <li><i>support material extrusion width</i> was almost not honored</li>
+    <li>apply the perimeter speed to single walls</li>
+</ul>

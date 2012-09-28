@@ -150,43 +150,42 @@
     </div>
     <div style="width: 500px">
       
-<h2 class="post">Slic3r 0.9.2 is out!</h2>
+<h2 class="post">Slic3r 0.9.3 is out!</h2>
 <div class="information">
-   <span class="date">2012-08-30</span>
+   <span class="date">2012-09-28</span>
 </div>
 
-<p>This time no package is available for 64bit Linux. Sorry...</p>
-
-<p><small>This release and all recent work about support material and multiple extruders is sponsored by <a href="http://www.lulzbot.com/"><b>LulzBot</b></a>. Check out their products!</small></p>
+<p><small>This release, and especially the work about support for multiple extruders, was sponsored by <a href="http://www.lulzbot.com/"><b>LulzBot</b></a>. Check out their products!</small></p>
 
 <h4>New features:</h4>
 <ul>
-    <li>new separate options for retraction length to be used when switching between multiple extruders</li>
-    <li>new option to disable retraction when moving between infill paths inside the same island</li>
-    <li>new option to configure the threshold for enforcing solid infill</li>
-    <li>export plates as AMF constellations (...next version will be able to import them back ;-))</li>
+    <li>print <b>multi-material files</b>!</li>
+    <li><b>save and load plates</b></li>
+    <li>new option to force a solid layer after a given number of layers</li>
+    <li>convert multiple STL files into a single multi-material AMF file</li>
 </ul>
 
 <h4>Improvements:</h4>
 <ul>
-    <li>smarter retraction in multi-extruder prints</li>
-    <li>always connect infill paths, preventing gaps and unnecessary retractions</li>
-    <li>avoid backwards moves when doing honeycomb infill</li>
-    <li>accept newline as separator for post-processing scripts in the GUI</li>
+    <li><i>less memory usage</i> when the graphical interface is used</li>
+    <li>rotation and scaling in the plater is a lot faster</li>
+    <li>better randomization for layer starting points</li>
+    <li>better adhesion of brim and support material</li>
+    <li>parts positions are preserved when an object is split in the plater</li>
+    <li>new <i>[print_preset]</i>, <i>[filament_preset]</i> and <i>[printer_preset]</i> placeholders for file names</li>
 </ul>
 
 <h4>Changes:</h4>
 <ul>
-    <li>temperature-related M-codes for the Teacup firmware were updated to the most recent ones</li>
+    <li>use support material extruder for brim</li>
 </ul>
 
 <h4>Bugfixes:</h4>
 <ul>
-    <li>the "Delete" button in the Plater was causing crashes</li>
-    <li>brim was positioned incorrectly if no skirt was enabled</li>
-    <li>fixed regression causing some bridges not to be detected correctly</li>
-    <li>crazy temperatures were written when using sequential printing</li>
-    <li>removed warnings caused by output filenames containing the % character</li>
+    <li><i>only retract when crossing perimeters</i> was still retracting too much</li>
+    <li>the <i>--datadir</i> command line option was ignored</li>
+    <li><i>support material extrusion width</i> was almost not honored</li>
+    <li>apply the perimeter speed to single walls</li>
 </ul>
       <div style="clear: both"></div>
     </div>
